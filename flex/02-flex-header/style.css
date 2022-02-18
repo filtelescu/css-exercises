@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
 .logo {
@@ -11,9 +15,17 @@
   padding: 4px 32px;
 }
 
+/* Note that you must add display: flex
+to EACH parent container. */
+
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 8px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
